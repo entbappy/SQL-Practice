@@ -1,0 +1,13 @@
+CREATE DATABASE test;
+USE test;
+
+CREATE TABLE student (
+id INT PRIMARY KEY,
+name VARCHAR(255)
+);
+
+INSERT INTO student VALUES(1, 'Alex');
+
+SELECT * FROM student;
+
+DROP DATABASE IF EXISTS test;
