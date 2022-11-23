@@ -1,0 +1,11 @@
+-- SET OPERATIONS
+select * from dept1
+UNION
+select * from dept2;
+
+-- inersection
+select * from dept1 INNER JOIN dept2 using(empid)
+
+
+-- SUB QUERIES
+select * from employee where age in (select age from employee where age > 30);
